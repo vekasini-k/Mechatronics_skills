@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int choco;
+    printf("\n 1. milk chocolate \n2. dark chocolate \n3. white chocolate");
+    scanf("%d",&choco);
+    switch(choco){
+        case 1:
+            printf("creamy taste");
+            break;
+        case 2:
+            printf("rich flavour");
+            break;
+        case 3:
+            printf("sweet and smooth texture");
+            break;
+        default:
+            printf("invalid choice");
+            break;
+    }
+
+    return 0;
+}
