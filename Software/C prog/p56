@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main(){
+    float u,b,s,t;
+    printf("U=");
+    scanf("%f",&u);
+    if (u==0){
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+        printf("\nNo units consumed; hence, no charge is calculated");
+    }
+    else if (u<0){
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+        printf("\nNegative units are invalid; hence, no charge is calculated");
+    }
+    else if (u>0 && u<=50){
+        b=0.5*u;
+        s=0.2*b;
+        t=b+s;
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+    
+
+    }
+    else if (u>=51 && u<=150){
+        b = 50 * 0.50 + (u - 50) * 0.75;
+        s=0.2*b;
+        t=b+s;
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+    
+    }
+    else if (u>=151 && u<=250){
+        b = 50 * 0.50 + 100 * 0.75 + (u - 150) * 1.20;
+        s=0.2*b;
+        t=b+s;
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+    
+    }
+    else if (u>250){
+        b = 50 * 0.50 + 100 * 0.75 + 100 * 1.20 + (u - 250) * 1.50;
+        s=0.2*b;
+        t=b+s;
+        printf("\nBill amount before surcharge: %0.2f",b);
+        printf("\nSurcharge amount: %0.2f",s);
+        printf("\nTotal bill amount after surcharge: %0.2f",t);
+    
+    }
+
+    return 0;
+}
