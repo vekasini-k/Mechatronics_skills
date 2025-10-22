@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int pen,note,pencil,total;
+    printf("enter no of pen:");
+    scanf("%d",&pen);
+    printf("enter no of note:");
+    scanf("%d",&note);
+    printf("enter no of pencil:");
+    scanf("%d",&pencil);
+    total=pen*20+note*70+pencil*9;
+    printf("total amt is: %d",total);
+
+    return 0;
+}
