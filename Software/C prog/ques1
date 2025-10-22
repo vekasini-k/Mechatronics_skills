@@ -1,1 +1,34 @@
+#include <stdio.h>
+int main(){
+    printf("enter all 6 sub marks");
+    int a,b,c,d,e,f,total,p;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 
+    total=a+b+c+d+e+f;
+    p=total/6;
+
+    if (p>=95){
+        printf("Grade A");
+    }
+    else if (p>=85 && p<95){
+        printf("Grade B");
+    }
+    else if (p>=75 && p<85){
+        printf("Grade C");
+    }
+    else if (p>=65 && p<75){
+        printf("Grade D");
+    }
+    else if (p>=45 && p<65){
+        printf("Grade E");
+    }
+    else if (p<45){
+        printf("Grade F");
+    }
+    else{
+        printf("error");
+    }
+
+return 0;
+
+}
