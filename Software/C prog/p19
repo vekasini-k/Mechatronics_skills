@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int in,pur,cur,share,cv,pv;
+    printf("enter initial investment amt");
+    scanf("%d",&in);
+    printf("enter purchase stock amt");
+    scanf("%d",&pur);
+    printf("enter current stock amt");
+    scanf("%d",&cur);
+    share=in/pur;
+    pv=share*pur;
+    cv=share*cur;
+
+    if (pv<cv){
+        printf("profit");
+    }
+    else if (pv>cv){
+        printf("loss");
+    }
+    else{
+        printf("no profit no loss");
+    }
+    return 0;
+}
