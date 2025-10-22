@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int sal;
+    float hra,da,gross;
+    printf("basic salary=");
+    scanf("%d",&sal);
+    if (sal<=0){
+        printf("invalid salary");
+    }
+    else if (sal>0 && sal<=10000){
+        hra=0.2*sal;
+        da=0.8*sal;
+        gross=sal+hra+da;
+        printf("gross salary= %0.2f",gross);
+    }
+    else if (sal>=10001 && sal<=20000){
+        hra=0.25*sal;
+        da=0.9*sal;
+        gross=sal+hra+da;
+        printf("gross salary= %0.2f",gross);
+    }
+    else if(sal>=20001){
+        hra=0.3*sal;
+        da=0.95*sal;
+        gross=sal+hra+da;
+        printf("gross salary= %0.2f",gross);
+    }  
+
+    return 0;
+}
