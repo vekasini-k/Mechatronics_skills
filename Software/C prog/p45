@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int ly;
+    printf("enter year");
+    scanf("%d",&ly);
+    if ((ly%4==0 && ly%100!=0)||(ly%400==0)){
+        printf("ly");
+    }
+    else{
+        printf("not ly");
+    }
+
+    return 0;
+}
