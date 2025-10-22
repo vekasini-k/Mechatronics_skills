@@ -1,0 +1,16 @@
+#include <stdio.h> 
+#include <math.h>
+int main(){
+    int num,root;
+    printf("enter the positive integer:");
+    scanf("%d",&num);
+    root= sqrt(num);
+    if (root*root==num){
+        printf("perfect square");
+    }
+    else{
+        printf("not a perfect sq");
+    }
+
+    return 0;
+}
