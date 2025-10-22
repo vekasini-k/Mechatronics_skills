@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int n;
+    printf("1.warrior \n2.mage \n3.rogue \n");
+    scanf("%d",&n);
+    if (n==1){
+        printf("extra strength");
+    }
+    else if (n==2){
+        printf("extra magic power");
+    }
+    else if (n==3){
+        printf("extra agility");
+    }
+
+    return 0;
+}
