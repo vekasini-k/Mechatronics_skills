@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int n,a=0,c=0,temp=0,sum=0;
+    printf("enter no:");
+    scanf("%d",&n);
+    temp=n;
+    while (n!=0){
+        c++;
+        n=n/10;
+    }
+    temp=n; 
+    while (temp!=0){
+        a=temp%10;
+        sum=sum+ pow(n,c);
+        temp=temp/10;
+        sum++;
+    }
+    if(n==sum){
+        printf("nar");
+    }
+    else{
+        printf("not nar");
+    }
+
+
+    return 0;
+}
