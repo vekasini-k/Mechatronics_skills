@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+    int t,c;
+    printf("credit limit");
+    scanf("%d",&c);
+    printf("transaction amt");
+    scanf("%d",&t);
+    if (c<=0 || t<=0){
+        printf("invalid");
+    }
+    else if (c>0 && t>0){
+        if (t<=c){
+            printf("approved");
+        }
+        else if(t>c){
+            printf("declined");
+        }
+    }
+
+    return 0;
+}
