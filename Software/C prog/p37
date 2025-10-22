@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main(){
+    int a;
+    char g;
+    printf("enter age");
+    scanf("%d",&a);
+    printf("enter gender");
+    scanf(" %c",&g);
+    if (a>=18 && a<30){
+        if (g=='M'){
+            printf("wage is 700");
+        }
+        else if (g=='F'){
+            printf("wage is 750");
+        }
+        else {
+            printf("enter valid gender");
+        }
+    }
+    else if (a>=30 && a<=40){
+        if (g=='M'){
+            printf("wage is 800");
+        }
+        else if (g=='F'){
+            printf("wage is 850");
+        }
+        else {
+            printf("enter valid gender");
+        }
+    }
+    else{
+        printf("enter valid age");
+    }
+
+    return 0;
+}
