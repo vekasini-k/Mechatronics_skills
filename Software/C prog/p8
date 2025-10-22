@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int a,b;
+    int add,sub,mul,div;
+    char c;
+    printf("enter 2 nos: ");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("enter the operation:");
+    scanf(" %c",&c);
+    if (c=='+'){
+        add=a+b;
+        printf("sum is: %d",add);
+    }
+    else if (c=='-'){
+        sub=a-b;
+        printf("diff is: %d",sub);
+    }
+    else if (c=='*'){
+        mul=a*b;
+        printf("product is: %d",mul);
+    }
+    else if (c=='/'){
+        div=a/b;
+        printf("div is: %d",div);
+    }
+
+
+    return 0;
+}
