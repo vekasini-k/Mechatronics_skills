@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int n,sum=0;
+    scanf("%d",&n);
+    int c=n;
+    while(c>0){
+        int a=c%10;
+        sum=sum+a;
+        c=c/10;
+    }
+    if(n%sum==0){
+        printf("equal");
+    }
+    else if(n%sum!=0){
+        printf("not equal");
+    }
+    return 0;
+}
