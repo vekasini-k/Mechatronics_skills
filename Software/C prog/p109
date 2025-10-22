@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int n,s=0;
+    scanf("%d",&n);
+    for (int i=1;i<=n;i++){
+        int a=i*i;
+        if(a==n){
+            printf("perfect square");
+            s++;
+        }
+    }
+    if(s==0){
+        printf("not perfect square");
+    }
+    return 0;
+} 
