@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    int sym;
+    printf("enter the no of symptoms:");
+    scanf("%d",&sym);
+    if (sym>=5){
+        printf("critical condition.. require immediate attention");
+    }
+    else if(sym==3 || sym==4){
+        printf("moderate condition.. require attention soon");
+    }
+    else if(sym<3){
+        printf("stable condition");
+    }
+    else{
+        printf("error");
+    }
+
+    return 0;
+}
