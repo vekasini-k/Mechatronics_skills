@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int choco,pd,pl;
+    printf("enter no of choco");
+    scanf("%d",&choco);
+    printf("enter no of per day");
+    scanf("%d",&pd);    
+    printf("enter no of planned days");
+    scanf("%d",&pl);
+    if (pd*pl<=choco){
+        printf("%d",1);
+    }
+    else{
+        printf("%d",0);
+    }
+
+    return 0;
+}
