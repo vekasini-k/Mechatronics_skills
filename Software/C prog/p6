@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int hr,rate,nrate,extra;
+    printf("enter the total worked hours in a week:");
+    scanf("%d",&hr);
+
+    char gen,m,f;
+    printf("enter your gender m/f:");
+    scanf(" %c",&gen);
+
+    if (gen=='m'){
+        rate=80*hr;
+        printf(" wage is: %d \n",rate);
+    }      
+    else if(gen=='f'){
+        rate=60*hr;
+        printf(" wage is: %d \n",rate);
+
+    }
+    if (hr>=8){
+        extra= hr-8;
+        nrate= rate+ (extra*100);
+        printf("updated wage is: %d ",nrate);
+
+    }
+    
+
+
+    return 0;
+}
