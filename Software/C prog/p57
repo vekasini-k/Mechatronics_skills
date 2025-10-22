@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+    int a,b,c;
+    printf("A=");
+    scanf("%d",&a);
+    printf("B=");
+    scanf("%d",&b);
+    printf("C=");
+    scanf("%d",&c);
+    if (a>0 && b>0 && c>0){
+        if (a+b+c==180){
+            printf("valid triangle");
+        }
+        else {
+            printf("invalid triangle");
+        }
+    }
+    else{
+        printf("invalid triangle");
+    }
+
+    return 0;
+}
