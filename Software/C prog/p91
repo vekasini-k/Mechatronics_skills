@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int n,rev=0,b,r1=0;
+    scanf("%d",&n);
+    int a=n%10;
+    n=n/10;
+    while (n>0){
+        b=n%10;
+        rev=rev*10+b;
+        n=n/10;
+    }
+    int c=rev%10;
+    rev=rev/10;
+    int d=rev*10+a;
+    while (d>0){
+        int b1=d%10;
+        r1=r1*10+b1;
+        d=d/10;
+    }
+    int f=r1*10+c;
+    printf("%d",f);
+
+    return 0;
+}
