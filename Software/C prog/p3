@@ -1,1 +1,32 @@
+#include <stdio.h>
+int main(){
+    printf("enter month number:");
+    int mon;
+    scanf("%d",&mon);
 
+    if (mon<1 && mon>12){
+        printf("error");
+    }
+    else if (mon==2){
+        printf("Feb 28 or 29days \n");
+    }
+    else if (mon==1 || mon==3|| mon==5 || mon==7 || mon==8 || mon==10 || mon==12){
+        printf("This month has 31days \n");
+    }
+    else if (mon==4 || mon==6 || mon==9 || mon==11){
+        printf("This month has 30days \n ");
+    }
+    if (mon>=1 && mon<=3){
+        printf("1st quadrant");
+    }
+    else if (mon>=4 && mon<=6){
+        printf("2nd quadrant");
+    }
+    else if (mon>=7 && mon<=9){
+        printf("3rd quadrant");
+    }
+    else if (mon>=10 && mon<=12){
+    printf("4th quadrant");
+    }
+    return 0;
+}
