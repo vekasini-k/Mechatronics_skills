@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+    int m;
+    printf("enter num");
+    scanf("%d",&m);
+    if (m<0){
+        printf("neg");
+    }
+    else if (m==0){
+        printf("neu");
+    }
+    else if (m>0 && m<=10){
+        printf("low posi");
+    }
+    else if (m>=11 && m<=50){
+        printf("mod posi");
+    }
+    else if (m>50){
+        printf("str posi");
+    }
+    
+    return 0;
+}
