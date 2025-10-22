@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int n,c;
+    scanf("%d",&n);
+    int arr[n];
+    int freq[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        freq[i]=-1;
+    }
+    for(int i=0;i<n;i++){
+        c=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
+                c++;
+                freq[j]=0;
+            }
+        }
+        if(freq[i]!=0){
+            freq[i]=c;
+        }
+        }
+        for(int k=0;k<n;k++){
+            if(freq[k]!=0){
+                printf("%d %d\n",arr[k],freq[k]);
+            }
+    }
+    
+    return 0;
+}
