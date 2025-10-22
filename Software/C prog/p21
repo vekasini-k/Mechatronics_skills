@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(){
+    int sal,bon,fin;
+    char gen;
+    printf("enter salary: ");
+    scanf("%d",&sal);
+    printf("enter gender: ");
+    scanf(" %c",&gen);
+    if (gen='m'){
+        if (sal<=10000){
+            bon=0.1*sal;
+        }
+        else if (sal>10000){
+            bon=0.5*sal;
+        }
+    }
+    else if (gen='f'){
+        if (sal<=10000){
+            bon=0.12*sal;
+        }
+        else if(sal>10000){
+            bon=0.7*sal;
+        }
+        else{
+            printf("invalid input");
+        }
+    } 
+    fin=sal+bon;
+    printf(" final salary: %d",fin);
+
+    return 0;
+}
