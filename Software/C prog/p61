@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(){
+    int q,t;
+    float p,a,tc;
+    printf("enter the price:");
+    scanf("%f",&p);
+    printf("enter the quantity:");
+    scanf("%d",&q);
+    t=p*q;
+    if (p<=0 || q<=1){
+        printf("invalid");
+    }
+    
+    else if (t%2==0){
+        tc=0.1*t;
+        a=t-tc;
+        printf("\nA= %0.2f",a);
+    }
+    else if (t%2!=0){
+        tc=0.15*t;
+        a=t-tc;
+        printf("\nA= %0.2f",a);
+        }
+
+
+
+    return 0;
+}
