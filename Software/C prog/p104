@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int n,sum=0;
+    scanf("%d",&n);
+    int i=2;
+    while (n>1){
+        while (n%i==0){
+            sum=sum+i;
+            n=n/i;
+        }
+        i++;
+    }
+    printf("%d",sum);
+    
+    return 0;
+
+}
