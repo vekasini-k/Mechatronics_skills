@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int a,b;
+    printf("enter 2 nos:");
+    scanf("%d %d",&a,&b);
+    if (a>b){
+        printf("a is greater %d",a);
+    }
+    else if(a<b){
+        printf("b is greater %d",b);
+    }
+    else if (a==b){
+        printf("equal");
+    }
+
+
+    return 0;
+}
