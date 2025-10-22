@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int n,d,d1;
+    printf("N=");
+    scanf("%d",&n);
+    printf("D=");
+    scanf("%d",&d);
+    if (n<=0 || n>6 || d<=0){
+        printf("invalid");
+    }
+    else if (n>=1 && n<=6){
+        if (n%2==0){
+            d1=d/3;
+            printf("%d",d1);
+        }
+        else {
+            d1=d*3;
+            printf("%d",d1);
+        }
+
+    }
+
+    return 0;
+}
