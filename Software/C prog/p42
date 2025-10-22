@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int a;
+    printf("enter age");
+    scanf("%d",&a);
+    if (a>0 && a<=12){
+        printf("discount available");
+    }
+    else{
+        printf("discount not available");
+    }
+
+    return 0;
+}
