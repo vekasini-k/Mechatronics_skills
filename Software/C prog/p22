@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int temp;
+    printf("enter body temp in celcius:");
+    scanf("%d",&temp);
+    if (temp>=37){
+        printf("fever");
+    }
+    else if(temp<37 && temp>=1){
+        printf("no fever");
+    }
+    else{
+        printf("invalid");
+    }
+
+    return 0;
+}
