@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int n1,n2;
+    double n;
+    printf("enter nos;");
+    scanf("%d",&n1);
+    scanf("%d",&n2);
+    if (n1%2!=0 && n2%2!=0){
+        n=n1*n2;
+        printf("output: %0.4lf",n);
+    }
+
+    return 0;
+}
