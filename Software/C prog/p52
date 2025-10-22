@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main(){
+    char name[50];
+    int age,gen;
+    printf("enter your name:");
+    scanf(" %s",&name);
+    printf("enter your age:");
+    scanf("%d",&age);
+    printf("\n1.male \n2.female \nenter your gender:");
+    scanf("%d",&gen);
+    if (age>0){
+        if (age>=18 && gen==1){
+            printf("Eligibility status: Eligible");
+            printf("\nSalutation: Mr. %s",name);
+        }
+        else if (age>=18 && gen==2){
+            printf("Eligibility status: Eligible");
+            printf("\nSalutation: Ms. %s",name);
+        }
+        else if (age<18 && gen==1){
+            printf("Eligibility status: Not Eligible");
+            printf("\nSalutation: None");
+        }
+        else if (age<18 && gen==2){
+            printf("Eligibility status: Not Eligible");
+            printf("\nSalutation: None ");
+        }
+        else{
+            printf("enter valid gender");
+        }
+    }
+    else if(age<=0){
+        printf("Eligibility status: Not Eligible");
+        printf("\nSalutation: None (or handle as per system design)");
+    }
+    
+    return 0;
+}
