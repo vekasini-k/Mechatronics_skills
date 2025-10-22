@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+    int l,w,a;
+    printf("L=");
+    scanf("%d",&l);
+    printf("W=");
+    scanf("%d",&w);
+    if (l<=0 || w<=0){
+        printf("shape:invalid");
+        printf("\narea:invalid");
+    }
+    else if(l==w){
+        printf("shape:sqaure");
+        a=l*w;
+        printf("\narea: %d",a);
+    }
+    else if(l!=w){
+        printf("shape:rectangle");
+        a=l*w;
+        printf("\narea:%d",a);
+    }
+
+
+    return 0;
+}
