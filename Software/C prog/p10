@@ -1,0 +1,53 @@
+#include <stdio.h>
+int main(){
+    int mon,yr;
+    printf("enter month number:");
+    scanf("%d",&mon);
+    if (mon==1){
+        printf("january and has 31days");
+    }
+    else if (mon==3){
+        printf("april and has 31days");
+    }
+    else if (mon==5){
+        printf("may and has 31days");
+    }
+    else if (mon==7){
+        printf("july and has 31days");
+    }
+    else if (mon==8){
+        printf("august and has 31days");
+    }
+    else if (mon==10){
+        printf("october and has 31days");
+    }
+    else if (mon==12){
+        printf("december and has 31days");
+    }
+    else if (mon==4){
+        printf("april and has 30days");
+    }
+    else if (mon==6){
+        printf("june and has 30days");
+    }
+    else if (mon==9){
+        printf("september and has 30days");
+    }
+    else if (mon==11){
+        printf("november and has 30days");
+    }
+    else if (mon==2){
+        printf("enter the year:");
+        scanf("%d",&yr);
+        if ((yr%4==0 && yr%100!=0) || (yr%400==0)){
+            printf("february and has 29 days");
+        }
+        else {
+            printf("february and has 28 days");
+        }
+    }
+    else{
+        printf("error");
+    }
+    return 0;
+}
