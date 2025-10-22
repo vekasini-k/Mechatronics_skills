@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    double bmi,h,w,hm;
+    printf("enter height in cm:");
+    scanf("%lf",&h);
+    printf("enter weight in kg:");
+    scanf("%lf",&w);
+    hm=h/100;
+    bmi=w/(hm*hm);
+    printf("bmi is: %0.2f",bmi);
+    if (bmi>0 && bmi<18.5){
+        printf("\nunderweight");
+    }
+    else if (bmi>=18.5 && bmi<=24.9){
+        printf("\nnormal weight");
+    }
+    else if (bmi>=25 && bmi<=29.9){
+        printf("\noverweight");
+    }
+    else {
+        printf("\nobese");
+    }
+    return 0;
+}
