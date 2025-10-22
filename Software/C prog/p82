@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int n,b=0;
+    scanf("%d",&n);
+    if (n%2==0){
+        b=2;
+    }
+    else if(n%2!=0){
+        b=1;
+    }
+    for (int i=b;i<=n;i=i+2){
+        printf("%d",i);
+    }
+    return 0;
+}
