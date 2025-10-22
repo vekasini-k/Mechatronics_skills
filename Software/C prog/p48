@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main(){
+    int sal,bon;
+    float bon1;
+    char gen;
+    printf("enter salary:");
+    scanf("%d",&sal);
+    printf("enter gender:");
+    scanf(" %c",&gen);
+    if (sal >=1 && sal<25000 ){
+        if (gen=='M' || gen=='F'){
+            bon=5000;
+            printf("bonus is %d",bon);
+        }
+        else{
+            printf("enter gen 'M' or 'F' ");
+        }
+    }
+    else if (sal>=25000 && sal<=50000){
+        if (gen=='M' || gen=='F'){
+            bon=7500;
+            printf("bonus is %d",bon);
+        }
+        else{
+            printf("enter gen 'M' or 'F' ");
+        }
+    }
+    else if (sal>50000){
+        if (gen=='M'){
+            bon1=0.10*sal;
+            printf("bonus is %0.2f",bon1);
+        }
+        else if (gen=='F'){
+            bon1=0.15*sal;
+            printf("bonus is %0.2f",bon1);
+        }
+        else{
+            printf("enter gen 'M' or 'F' ");
+        }
+    }
+    else if (sal==0){
+        if (gen=='M' || gen=='F'){
+            printf("No bonus for zero salary");
+        }
+    }
+    else if (sal<0){
+        if (gen=='M' || gen=='F'){
+            printf("Invalid salary, no bonus");
+        }
+    }
+    return 0;
+}
