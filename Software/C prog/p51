@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+    int c,s,cal;
+    printf("enter the cost price:");
+    scanf("%d",&c);
+    printf("enter the selling price:");
+    scanf("%d",&s);
+    cal=s-c;
+    if (s>=0 && c>=0){
+        if (cal>0){
+            printf("P= %d",cal);
+            printf("\nprofit");
+        }
+        else if (cal<0){
+            printf("P= %d",cal);
+            printf("\nloss");
+        }
+        else{
+            printf("P= %d",cal);
+            printf("\nbroke even");
+        }
+    }
+    else if (c<0){
+        printf("cost price cannot have negative values");
+    }
+    else if (s<0){
+        printf("selling price cannot have negative values");
+    }
+    
+    return 0;
+}
