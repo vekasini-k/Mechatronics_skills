@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    char c;
+    printf("r for red \ny for yellow \ng for green \n");
+    scanf(" %c",&c);
+    if (c=='r'){
+        printf("stop");
+    }
+    else if (c=='y'){
+        printf("wait");
+    }
+    else if(c=='g'){
+        printf("go");
+    }
+
+    return 0;
+}
