@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n,rev=0;
+    scanf("%d",&n);
+    for (int i=n;i!=0;){
+        int a=i%10;
+        rev=(rev*10)+a;
+        i=i/10;
+    }
+    printf("%d",rev);
+
+    return 0;
+}
