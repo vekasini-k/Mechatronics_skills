@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter no:");
+    scanf("%d %d",&n,&m);
+    if(n%2==0&&m%2==0){
+        int a=n+2;
+        printf("%d",a);
+    }
+    else if(n%2!=0&&m%2!=0){
+        printf("not even no");
+    }
+
+    return 0;
+}
