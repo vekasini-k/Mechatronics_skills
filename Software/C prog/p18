@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    int ang;
+    printf("enter the angles in degree:");
+    scanf("%d",&ang);
+    if (ang<=360){
+        if(ang==0 || ang==360){
+            printf("west");
+        }
+        else if(ang==90){
+            printf("north");
+        }
+        else if(ang==180){
+            printf("east");
+        }
+        else if(ang==270){
+            printf("south");
+        }
+        
+    }
+    else{
+        printf("degree not valid");
+    }
+    
+    return 0;
+}
