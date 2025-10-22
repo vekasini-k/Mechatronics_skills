@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+    int steps,time,category;
+    printf("enter number of steps in a day:");
+    scanf("%d",&steps);
+    printf("enter time in mins:");
+    scanf("%d",&time);
+    category=steps/time;
+    if (category<60){
+        printf("walk more");
+    }
+    else if(category>=60 && category<90){
+        printf("less active");
+    }
+    else if(category>=90 && category<120){
+        printf("moderate active");
+    }
+    else if(category>=120){
+        printf("highly active");
+    }
+
+return 0;
+}
