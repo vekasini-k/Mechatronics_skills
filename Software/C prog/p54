@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int x;
+    printf("x=");
+    scanf("%d",&x);
+    if (x>0 && x<70){
+        printf("Order Confirmed. thank you!");
+    }
+    else if (x>=70){
+        printf("order limit reached. thank you!");
+    }
+    else if (x<=0){
+        printf("order has no proper quantity specified. thank you!");
+    }
+
+    return 0;
+}
