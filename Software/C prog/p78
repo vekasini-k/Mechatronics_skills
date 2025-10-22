@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int n,rev;
+    printf("enter no:");
+    scanf("%d",&n); //121
+    while (1){
+        n=n+1;//122
+        rev=0;
+        for(int i=n;i!=0;){ //i=122
+            int a=i%10; //a=2
+            rev=rev*10+a;//r=2
+            i=i/10;//i=12
+        }
+        if(n==rev){
+            break;
+        }
+
+    }
+    printf("%d",n);
+
+    return 0;
+}
