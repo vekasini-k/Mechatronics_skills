@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int v;
+    printf("enter voltage");
+    scanf("%d",&v);
+    if (v>=0 && v<=50){
+        printf("low");
+    }
+    else if (v>=51 && v<=100){
+        printf("medium");
+    }
+    else if (v>=101 && v<=150){
+        printf("high");
+    }
+    else if (v>=151){
+        printf("critical");
+    }
+    else{
+        printf("error");
+    }
+
+
+    return 0;
+}
