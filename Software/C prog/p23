@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    int num;
+    printf("enter positive decimal integer:");
+    scanf("%d",&num);
+    printf("ocatal is: %o",num);
+    printf("\n hexadecimal is: %X",num);
+
+    return 0;
+}
