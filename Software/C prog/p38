@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(){
+    int p;
+    double dis,td;
+    printf("enter market price");
+    scanf("%d",&p);
+    if (p>10000){
+        dis=0.20*p;
+        td=p-dis;
+        printf("dis amt %0.2lf",td);
+    }
+    else if (p>7000 && p<=10000){
+        dis=0.15*p;
+        td=p-dis;
+        printf("dis amt %0.2lf",td);
+    }
+    else if (p>=2000 && p<=7000){
+        dis=0.10*p;
+        td=p-dis;
+        printf("dis amt %0.2lf",td);
+    }
+    else if (p<2000){
+        dis=0;
+        td=p-dis;
+        printf("dis amt %0.2lf",td);
+    }
+    
+    
+    
+
+    return 0;
+}
