@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    float b=1,s=0;
+    int n;
+    printf("enter no:");
+    scanf("%d",&n);
+    for (int i=1;i<=n;i++){
+        float a=1.0/b;
+        s=s+a;
+        b=b*2;
+    }
+    printf("%0.2f",s);
+
+    return 0;
+}
